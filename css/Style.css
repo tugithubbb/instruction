@@ -1,0 +1,408 @@
+html,body {
+    font-family: "Work Sans", sans-serif;;
+}
+.heading {
+    margin-bottom: 3rem;
+   
+}
+.heading h2 {
+    font-size: 40px;
+    letter-spacing: .5px;
+    color: #ff4f81;
+    font-weight: bold;
+    text-align: center;
+}
+.heading p {
+    text-transform: capitalize;
+    /* viết hoa chữ cái đầu của chữ */
+    letter-spacing: 4px;
+   
+    font-size: 17px;
+    text-align: center;
+    
+}
+.heading p::after {
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    /* after là thẻ inline nên ko xét được with và height nên ta dùng block  */
+    margin:20px auto;
+    /* để căn giữa  */
+}
+.section {
+    padding: 5rem 0;
+}
+/* HEADER */
+.header__top {
+    font-size: 14px;
+    background-color: #ff4f81;
+    
+}
+.header__top a {
+    text-decoration: none;
+    /* dấu gạch dưới */
+    color: white;
+    transition: all 0.5s;
+    
+}
+.header__right {
+    /* width: 30px;
+    height: 30px; */
+    /* background-color: black; */
+    /* 
+    border: 1px solid black;
+    /* display: inline-block; */
+    /* block để ta xét kích thước inline giúp ko bị rớt xg hàng */
+    /* display inline không thêm được with */
+    text-align: center;
+    
+} 
+.header__left a:hover {
+    color: black !important;
+
+}
+
+.navINtruction1 {
+    color: black;
+}
+.navINtruction1 .navbar-brand p:first-child {
+    font-size: 36px;
+    font-weight: bold;
+}
+.navINtruction1 .navbar-brand p:first-child i {
+    transform:skewX(-10deg) ;
+}
+.navINtruction1 .navbar-brand p:last-child {
+    font-size: 11px;
+    color: #ff4f81;
+    letter-spacing: 3px;
+    font-weight: bold;
+ 
+}
+
+#navbarINtruction .nav-item {
+    margin: 0 15px;
+}
+#navbarINtruction .nav-item::after {
+    content: '';
+    /* thuoc tinh content bat buoc phai co */
+    /* '' de tao duong gach duoi */
+    width: 0;
+    /* khi hover vao moi xuat hien  */
+    height: 2px;
+    background-color: #ff4f81;
+    display: block;
+    /* vi after va before la inline nen ta thay doi thanh block */
+    transition: all 0.5s;
+}
+#navbarINtruction .nav-item:hover::after {
+width: 100%;
+}  
+
+
+#navbarINtruction .nav-item .nav-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+#navbarINtruction .nav-item:hover .nav-link {
+    color: #ff4f81;
+}
+
+#navbarINtruction .nav-item {
+    color: #ff4f81;
+}
+#navbarINtruction .nav-item.active::after {
+    width: 100%;
+}
+#navbarINtruction .dropdown-menu {
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(0,0,0,0.6) ;
+}
+#navbarINtruction .dropdown-item {
+    color: white;
+}
+
+#navbarINtruction .dropdown-item:focus,#navbarINtruction .dropdown-item:hover {
+    background-color: transparent;
+    color: #ff4f81;
+}
+/* CAROUSEL */
+#carouselExampleCaptions .carousel-caption {
+    /* thủ thuật canh giữa này chỉ áp dụng với thuộc tính position: absolute; */
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    /* không ghi tục toạ độ thì nó hiểu là xét cho cả X và Y  */
+}
+#carouselExampleCaptions .carousel-caption .h1 {
+    font-size: 52px;
+
+}
+#carouselExampleCaptions .carousel-caption p {
+    letter-spacing: 4px;
+    line-height: 1.8rem;
+    width: 70%;
+    margin: 0 auto;
+    /* noi dung o giua va cach deu 2 ben  */
+    margin-bottom: 25px;
+    
+}
+#carouselExampleCaptions .carousel-caption button {
+    padding: 11px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    /* khong muon bo tron  */
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+#carouselExampleCaptions .carousel-caption button:hover {
+    background-color: #ff4f81;
+    border-color: #ff4f81;
+}
+/* WELCOME */
+.welcome__content>p {
+    /* lấy thẻ con p trực tiếp  */
+    width: 80%;
+    margin: 0 auto;
+    /* nội dung ở giữa và cách đều 2 bên  */
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    /* 1em = 15px */
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    padding: 1rem 0 5rem;
+}
+.welcome__item i {
+    font-size: 2rem;
+}
+.welcome__item h3 {
+    color: #ff4f81;
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+.welcome__item h4 {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.2rem;
+}
+.welcome__item p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8rem;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+}
+.welcome__col {
+    padding: 2rem;
+}
+/* OUR STATS */
+.ourstats {
+    background-image: url(../img/banner2.jpg);
+    background-attachment: fixed;
+    /* trượt ảnh  */
+    background-size: cover;
+}
+
+.ourstats__item i {
+    
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+.ourstats__contents {
+    text-align: center;
+}
+.ourstats__item h3 {
+    font-size: 1.3rem;
+    color: #ff4f81;
+    letter-spacing: 3px;
+    margin: 30px 0 20px;
+    font-weight: bold;
+
+}
+.ourstats__item p {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+
+
+}
+.ourstats p:first-of-type {
+    color: white;
+}
+/* OFFER */
+.offer__col {
+    padding: 15px;
+}
+.offer__item {
+    padding: 25px 40px;
+    box-shadow: 0px 1px 8px 0px rgba(158,158, 158, 0.75);
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+}
+.offer__item:hover {
+    background-color: #12ccc3;
+}
+
+.offer__item i {
+    color: #ff4f81;
+    font-size: 40px;
+
+}
+.offer__item h3 {
+    font-size: 20px;
+    margin: 25px 0 20px;
+    color: black;
+}
+.offer__item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+/* OFFER  */
+.feedback {
+    background-image: url(../img/banner3.jpg);
+    background-attachment: fixed;
+    /* trượt ảnh  */
+    background-size: cover;
+    background-position: center;
+}
+.feedback__content {
+    background-color: rgba(0 , 0, 0, 0.47);
+    padding: 1rem;
+    box-shadow: 0px 1px 7px #8e8e8e;
+}
+.feedback__content .item {
+    color: white;
+    padding: 1rem;
+}
+.feedback__top {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0 , 0, 0, 0.47);
+    position: relative;
+    border-radius: 5px;
+
+}
+.feedback p:first-of-type {
+    color: white;
+}
+
+/* tạo hình tam giác  */
+.feedback__top::after {
+    content: '';
+    border-top: 9px solid rgba(0 , 0, 0, 0.47);
+    border-left: 0px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 28%;
+}
+
+.feedback__content .feedback__bottom img {
+    width: 28%;
+    display: inline-block;
+}
+.feedback__bottom {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin: 2rem auto;
+}
+.feedback__name p:first-child {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.feedback__name p {
+    margin: 0;
+    color: #ff4f81;
+    
+}
+.feedback__name {
+    margin-left: 5px;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot span {
+    background-color: #ff4f81;
+    opacity: 0.5;
+}
+
+/* NEWS */
+.news__content img {
+    border: 2px solid #dedede;
+
+}
+.news__content h3 {
+    line-height: 1.1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.news__content a {
+    text-decoration: none ;
+    color: black;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+
+}
+.news__content a:hover {
+    color: #ff4f81;
+}
+.news__content h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff4f81;
+    margin: 1rem 0;
+
+}
+.news__content p {
+    color: #999;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+    font-size: 0.9 rem;
+}
+.news__content .row:last-child {
+ margin-top: 5rem;
+}
+
+
+/* MODAL  */
+#duyennModal h5 {
+    color: #ff4f81;
+    font-size: 29px;
+    font-weight: bold;
+}
+#duyennModal p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8rem;
+    padding: 20px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
