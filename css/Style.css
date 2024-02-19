@@ -130,6 +130,12 @@ width: 100%;
     background-color: transparent;
     color: #ff4f81;
 }
+#navbarINtruction .navbar-toggler{
+    color: #ff4f81;
+    background-color: black;
+    border-radius: 0px;
+    
+}
 /* CAROUSEL */
 #carouselExampleCaptions .carousel-caption {
     /* thủ thuật canh giữa này chỉ áp dụng với thuộc tính position: absolute; */
@@ -197,7 +203,7 @@ width: 100%;
 .welcome__item p {
     color: #999;
     font-size: 15px;
-    line-height: 1.8rem;
+    line-height: 1.8em;
     margin: 10px 0 0;
     letter-spacing: 1px;
 }
@@ -393,6 +399,114 @@ width: 100%;
     padding: 20px 0;
 
 }
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1199.98px) {
+    /* CAROUSEl  */
+    #carouselExampleCaptions .carousel-caption {
+        top: 50%;
+    }
+    #carouselExampleCaptions .carousel-caption h1 {
+        font-size: 4vw;
+    }
+    #carouselExampleCaptions .carousel-caption P {
+        font-size: 1.6vw;
+        margin-bottom: 0.5em;
+    }
+    #carouselExampleCaptions .carousel-caption button {
+        font-size: 1.5vw;
+        padding: 0.8em 1em;
+    }
+/* HEADER  */
+}
+@media  screen and (max-width: 991.98px) {
+    /* HEADER  */
+    .navINtruction1 .navbar-brand p:first-child {
+        /* 3% so với width của trình duyệt  */
+        font-size: 3vw;
+
+    }
+    .navINtruction1 .navbar-brand p:last-child {
+        /* 3% so với width của trình duyệt  */
+        /* thu dần màn hình  */
+        font-size: 1.5vw
+
+    }
+}
+@media screen and (max-width: 767.98px) {
+    /* HEADER  */
+                    #navbarINtruction .navbar-nav {
+                        background-color: #eee;
+                        text-align: center;
+                    }
+                    #navbarINtruction .dropdown-menu {
+                        background-color: #e0e1e2;
+                        border-color: #e0e1e2;
+                        text-align:center;
+                    }
+                    #navbarINtruction .dropdown-item {
+                        color: black;
+                    }
+}
+@media screen and (max-width:575.98px ) {
+    .heading p {
+        padding: 0px 15px;
+    }
+    .header__left a {
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 415px) {
+    /* CAROUSEL  */
+    .cybercarousel {
+        height: 250px;
+    }
+    .cybercarousel .carousel-inner, .cybercarousel .carousel-item img {
+        height: 100%;
+        
+    }
+}
+@media  screen and (max-width:320px) {
+    /* HEADER  */
+    .header__right {
+        width: 35%;
+        text-align: center;
+
+    }
+    .header__right a {
+        margin-bottom: 5px;
+
+    }
+
+    
+}
+@media  screen and (min-width:768px) and (max-width:992px) {
+    /* HEADER  */
+    #navbarINtruction .nav-item .nav-link {
+        font-size: 12px;
+        padding: 5px;
+
+    }
+}
+@media screen and (min-width: 575px) and (max-width:992px) {
+    /* CAROUSEl  */
+    .feedback__bottom {
+        width: 85%;
+    }
+    
+}
+@media  screen and (max-width:376px) {
+    /* CAROUSEl  */
+    .feedback__bottom {
+        width: 100%;
+    }
+}
+
+
 
 
 
